@@ -1,0 +1,19 @@
+{
+  "name": "river-strike",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "wrangler dev",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "test": "node --experimental-strip-types tests/api.mjs",
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy"
+  },
+  "devDependencies": { "wrangler": "4.92.0" },
+  "cloudflare": {
+    "bindings": {
+      "DB": { "description": "Stores player names, invitation groups, attempts and shared high scores for River Strike." }
+    }
+  }
+}
