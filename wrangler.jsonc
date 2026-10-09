@@ -14,7 +14,7 @@
     {
       "binding": "DB",
       "database_name": "river-strike-scores",
-      "database_id": "00000000-0000-4000-8000-000000000000",
+      "database_id": "3313fbd1-2319-4c98-a8d3-601a3cc015dc",
       "migrations_dir": "drizzle"
     }
   ]
